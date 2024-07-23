@@ -2,42 +2,42 @@ JDK version is 1.8.0_381-b09
 JAVA_HOME = /usr/lib/jvm/jdk-1.8-oracle-x64
 CLASSPATH = /opt/WebLogic Kubernetes Toolkit UI/tools/weblogic-deploy/lib/weblogic-deploy-core.jar:/home/opc/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic.jar
 JAVA_PROPERTIES = -Djava.util.logging.config.class=oracle.weblogic.deploy.logging.WLSDeployLoggingConfig -Dpython.cachedir.skip=true -Dpython.console= 
-/usr/lib/jvm/jdk-1.8-oracle-x64/bin/java -cp /opt/WebLogic Kubernetes Toolkit UI/tools/weblogic-deploy/lib/weblogic-deploy-core.jar:/home/opc/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic.jar           -Djava.util.logging.config.class=oracle.weblogic.deploy.logging.WLSDeployLoggingConfig -Dpython.cachedir.skip=true -Dpython.console=            -Dpython.path=/home/opc/Oracle/Middleware/Oracle_Home/wlserver/common/wlst/modules/jython-modules.jar/Lib           org.python.util.jython           /opt/WebLogic Kubernetes Toolkit UI/tools/weblogic-deploy/lib/python/prepare_model.py -oracle_home /home/opc/Oracle/Middleware/Oracle_Home -model_file /home/opc/base_project-models/model.yaml -output_dir /home/opc/prepareModelI4qQT0 -target wko -variable_file /home/opc/base_project-models/variables.properties
-####<Jul 23, 2024 11:34:52 AM> <INFO> <WebLogicDeployToolingVersion> <logVersionInfo> <WLSDPLY-01750> <The WebLogic Deploy Tooling prepareModel version is 4.1.0:.52a9859:Apr 18, 2024 23:02 UTC>
-####<Jul 23, 2024 11:34:52 AM> <INFO> <WLSDeployLoggingConfig> <logLoggingDirectory> <WLSDPLY-01755> <The prepareModel program will write its log to directory /home/opc/logs>
-####<Jul 23, 2024 11:34:52 AM> <INFO> <PathHelper> <__init__> <WLSDPLY-02100> <Setting local file system to use Posix-style paths>
-####<Jul 23, 2024 11:34:52 AM> <INFO> <PathHelper> <find_local_config_path> <WLSDPLY-02105> <Using custom WDT configuration file /opt/WebLogic Kubernetes Toolkit UI/tools/wdt-config/targets/wko/target.json>
-####<Jul 23, 2024 11:34:52 AM> <INFO> <ModelContext> <__copy_from_args> <WLSDPLY-01050> <Local WebLogic version is 12.2.1.3.0>
-####<Jul 23, 2024 11:34:52 AM> <INFO> <PathHelper> <find_local_config_path> <WLSDPLY-02105> <Using custom WDT configuration file /opt/WebLogic Kubernetes Toolkit UI/tools/wdt-config/targets/wko/target.json>
-####<Jul 23, 2024 11:34:52 AM> <INFO> <Aliases> <__init__> <WLSDPLY-19052> <Aliases loaded using WebLogic version 12.2.1.3.0 and WLST OFFLINE mode>
-####<Jul 23, 2024 11:34:52 AM> <INFO> <Aliases> <__init__> <WLSDPLY-19052> <Aliases loaded using WebLogic version 12.2.1.3.0 and WLST OFFLINE mode>
-####<Jul 23, 2024 11:34:52 AM> <INFO> <Validator> <load_variables> <WLSDPLY-05004> <Performing variable validation on the /home/opc/base_project-models/variables.properties variable file>
-####<Jul 23, 2024 11:34:52 AM> <INFO> <Validator> <__validate_model_file> <WLSDPLY-05002> <Performing validation in TOOL mode for WebLogic Server version 12.2.1.3.0 and WLST OFFLINE mode>
-####<Jul 23, 2024 11:34:52 AM> <INFO> <Validator> <__validate_model_file> <WLSDPLY-05003> <Performing model validation on the /home/opc/base_project-models/model.yaml model file>
-####<Jul 23, 2024 11:34:52 AM> <INFO> <ModelValidator> <validate_model_section> <WLSDPLY-05008> <Validating the domainInfo section of the model file>
-####<Jul 23, 2024 11:34:52 AM> <INFO> <ModelValidator> <validate_model_section> <WLSDPLY-05008> <Validating the topology section of the model file>
-####<Jul 23, 2024 11:34:53 AM> <INFO> <ModelValidator> <validate_model_section> <WLSDPLY-05008> <Validating the resources section of the model file>
-####<Jul 23, 2024 11:34:54 AM> <INFO> <ModelValidator> <validate_model_section> <WLSDPLY-05008> <Validating the appDeployments section of the model file>
-####<Jul 23, 2024 11:34:54 AM> <INFO> <ModelValidator> <_validate_single_path_in_archive> <WLSDPLY-05025> <Attribute SourcePath in model location appDeployments:/Application/opdemo references archive entry wlsdeploy/applications/opdemo.war but the archive file was not provided>
-####<Jul 23, 2024 11:34:55 AM> <INFO> <PathHelper> <find_local_config_path> <WLSDPLY-02105> <Using custom WDT configuration file /opt/WebLogic Kubernetes Toolkit UI/tools/wdt-config/targets/wko/target.json>
-####<Jul 23, 2024 11:34:55 AM> <INFO> <filter_helper> <_apply_filter> <WLSDPLY-20034> <Applying filter with ID "wko_filter">
-####<Jul 23, 2024 11:34:55 AM> <INFO> <Aliases> <__init__> <WLSDPLY-19052> <Aliases loaded using WebLogic version 12.2.1.3.0 and WLST OFFLINE mode>
-####<Jul 23, 2024 11:34:56 AM> <INFO> <wlsdeploy.prepare_model> <_apply_filter_and_inject_variable> <WLSDPLY-06014> <Filters applied to the model>
-####<Jul 23, 2024 11:34:56 AM> <INFO> <PathHelper> <find_local_config_path> <WLSDPLY-02105> <Using custom WDT configuration file /opt/WebLogic Kubernetes Toolkit UI/tools/wdt-config/targets/wko/target.json>
-####<Jul 23, 2024 11:34:56 AM> <INFO> <variable_injector> <inject_variables_from_configuration> <WLSDPLY-19602> <Use variable file /home/opc/base_project-models/variables.properties from command line arguments>
-####<Jul 23, 2024 11:34:56 AM> <INFO> <variable_injector> <inject_variables_from_configuration> <WLSDPLY-19533> <Will inject variable replacement strings into model using directions found in file /opt/WebLogic Kubernetes Toolkit UI/tools/wdt-config/targets/wko/target.json>
-####<Jul 23, 2024 11:34:57 AM> <INFO> <variable_injector> <inject_variables_from_configuration> <WLSDPLY-19518> <Variables were inserted into the model and written to the variables file /home/opc/prepareModelI4qQT0/variables.properties>
-####<Jul 23, 2024 11:34:57 AM> <INFO> <PathHelper> <find_local_config_path> <WLSDPLY-02105> <Using custom WDT configuration file /opt/WebLogic Kubernetes Toolkit UI/tools/wdt-config/targets/wko/target.json>
-####<Jul 23, 2024 11:34:57 AM> <INFO> <filter_helper> <_apply_filter> <WLSDPLY-20034> <Applying filter with ID "wko_filter">
-####<Jul 23, 2024 11:34:57 AM> <INFO> <Aliases> <__init__> <WLSDPLY-19052> <Aliases loaded using WebLogic version 12.2.1.3.0 and WLST OFFLINE mode>
-####<Jul 23, 2024 11:34:57 AM> <INFO> <variables> <_substitute> <WLSDPLY-01737> <Environment variable "DOMAIN_UID" was not found>
-####<Jul 23, 2024 11:34:57 AM> <INFO> <variables> <_substitute> <WLSDPLY-01737> <Environment variable "DOMAIN_UID" was not found>
-####<Jul 23, 2024 11:34:57 AM> <INFO> <variables> <_substitute> <WLSDPLY-01737> <Environment variable "DOMAIN_UID" was not found>
-####<Jul 23, 2024 11:34:57 AM> <INFO> <variables> <_substitute> <WLSDPLY-01737> <Environment variable "DOMAIN_UID" was not found>
-####<Jul 23, 2024 11:34:57 AM> <INFO> <variables> <_substitute> <WLSDPLY-01739> <Could not resolve secret token "__weblogic-credentials__:username". Known secrets include: .  Secrets can only be resolved in Kubernetes environment. The secret tokens name and keys must have a matching Kubernetes secret name and literals in the same namespace. For WebLogic Kubernetes Operator deployment, you must specify the secret name in "domain.spec.configuration.secrets">
-####<Jul 23, 2024 11:34:57 AM> <INFO> <variables> <_substitute> <WLSDPLY-01739> <Could not resolve secret token "__weblogic-credentials__:password". Known secrets include: .  Secrets can only be resolved in Kubernetes environment. The secret tokens name and keys must have a matching Kubernetes secret name and literals in the same namespace. For WebLogic Kubernetes Operator deployment, you must specify the secret name in "domain.spec.configuration.secrets">
+/usr/lib/jvm/jdk-1.8-oracle-x64/bin/java -cp /opt/WebLogic Kubernetes Toolkit UI/tools/weblogic-deploy/lib/weblogic-deploy-core.jar:/home/opc/Oracle/Middleware/Oracle_Home/wlserver/server/lib/weblogic.jar           -Djava.util.logging.config.class=oracle.weblogic.deploy.logging.WLSDeployLoggingConfig -Dpython.cachedir.skip=true -Dpython.console=            -Dpython.path=/home/opc/Oracle/Middleware/Oracle_Home/wlserver/common/wlst/modules/jython-modules.jar/Lib           org.python.util.jython           /opt/WebLogic Kubernetes Toolkit UI/tools/weblogic-deploy/lib/python/prepare_model.py -oracle_home /home/opc/Oracle/Middleware/Oracle_Home -model_file /home/opc/base_project-models/model.yaml -output_dir /home/opc/prepareModelQdXVZJ -target wko -variable_file /home/opc/base_project-models/variables.properties
+####<Jul 23, 2024 11:35:15 AM> <INFO> <WebLogicDeployToolingVersion> <logVersionInfo> <WLSDPLY-01750> <The WebLogic Deploy Tooling prepareModel version is 4.2.0:.f2e5967:Jun 18, 2024 20:42 UTC>
+####<Jul 23, 2024 11:35:15 AM> <INFO> <WLSDeployLoggingConfig> <logLoggingDirectory> <WLSDPLY-01755> <The prepareModel program will write its log to directory /home/opc/logs>
+####<Jul 23, 2024 11:35:15 AM> <INFO> <prepare_model> <main> <WLSDPLY-20043> </opt/WebLogic Kubernetes Toolkit UI/tools/weblogic-deploy/lib/python/prepare_model.py running with Java version 1.8.0_381 on operating system Linux 5.15.0-104.119.4.2.el8uek.x86_64 (amd64)>
+####<Jul 23, 2024 11:35:16 AM> <INFO> <prepare_model> <main> <WLSDPLY-20044> </opt/WebLogic Kubernetes Toolkit UI/tools/weblogic-deploy/lib/python/prepare_model.py is running on a Java version that supports the encryption algorithms used by WDT encryption>
+####<Jul 23, 2024 11:35:16 AM> <INFO> <PathHelper> <__init__> <WLSDPLY-02100> <Setting local file system to use Posix-style paths>
+####<Jul 23, 2024 11:35:16 AM> <INFO> <PyReflectedFunction> <__call__> <WLSDPLY-00917> <Using default configuration wko4 for target wko>
+####<Jul 23, 2024 11:35:16 AM> <INFO> <ModelContext> <__copy_from_args> <WLSDPLY-01050> <Local WebLogic version is 12.2.1.3.0>
+####<Jul 23, 2024 11:35:16 AM> <INFO> <Aliases> <__init__> <WLSDPLY-19052> <Aliases loaded using WebLogic version 12.2.1.3.0 and WLST OFFLINE mode>
+####<Jul 23, 2024 11:35:16 AM> <INFO> <Aliases> <__init__> <WLSDPLY-19052> <Aliases loaded using WebLogic version 12.2.1.3.0 and WLST OFFLINE mode>
+####<Jul 23, 2024 11:35:16 AM> <INFO> <Validator> <load_variables> <WLSDPLY-05004> <Performing variable validation on the /home/opc/base_project-models/variables.properties variable file>
+####<Jul 23, 2024 11:35:16 AM> <INFO> <Validator> <__validate_model_file> <WLSDPLY-05002> <Performing validation in TOOL mode for WebLogic Server version 12.2.1.3.0 and WLST OFFLINE mode>
+####<Jul 23, 2024 11:35:16 AM> <INFO> <Validator> <__validate_model_file> <WLSDPLY-05003> <Performing model validation on the /home/opc/base_project-models/model.yaml model file>
+####<Jul 23, 2024 11:35:16 AM> <INFO> <ModelValidator> <validate_model_section> <WLSDPLY-05008> <Validating the domainInfo section of the model file>
+####<Jul 23, 2024 11:35:16 AM> <INFO> <ModelValidator> <validate_model_section> <WLSDPLY-05008> <Validating the topology section of the model file>
+####<Jul 23, 2024 11:35:18 AM> <INFO> <ModelValidator> <validate_model_section> <WLSDPLY-05008> <Validating the resources section of the model file>
+####<Jul 23, 2024 11:35:18 AM> <INFO> <ModelValidator> <validate_model_section> <WLSDPLY-05008> <Validating the appDeployments section of the model file>
+####<Jul 23, 2024 11:35:18 AM> <INFO> <ModelValidator> <_validate_single_path_in_archive> <WLSDPLY-05025> <Attribute SourcePath in model location appDeployments:/Application/opdemo references archive entry wlsdeploy/applications/opdemo.war but the archive file was not provided>
+####<Jul 23, 2024 11:35:19 AM> <INFO> <filter_helper> <_apply_filter> <WLSDPLY-20034> <Applying filter with ID "wko_filter">
+####<Jul 23, 2024 11:35:19 AM> <INFO> <Aliases> <__init__> <WLSDPLY-19052> <Aliases loaded using WebLogic version 12.2.1.3.0 and WLST OFFLINE mode>
+####<Jul 23, 2024 11:35:20 AM> <INFO> <wlsdeploy.prepare_model> <_apply_filter_and_inject_variable> <WLSDPLY-06014> <Filters applied to the model>
+####<Jul 23, 2024 11:35:20 AM> <INFO> <variable_injector> <inject_variables_from_configuration> <WLSDPLY-19602> <Use variable file /home/opc/base_project-models/variables.properties from command line arguments>
+####<Jul 23, 2024 11:35:20 AM> <INFO> <variable_injector> <inject_variables_from_configuration> <WLSDPLY-19533> <Will inject variable replacement strings into model using directions found in file /opt/WebLogic Kubernetes Toolkit UI/tools/weblogic-deploy/lib/targets/wko4/target.json>
+####<Jul 23, 2024 11:35:21 AM> <INFO> <variable_injector> <inject_variables_from_configuration> <WLSDPLY-19518> <Variables were inserted into the model and written to the variables file /home/opc/prepareModelQdXVZJ/variables.properties>
+####<Jul 23, 2024 11:35:21 AM> <INFO> <filter_helper> <_apply_filter> <WLSDPLY-20034> <Applying filter with ID "wko_filter">
+####<Jul 23, 2024 11:35:21 AM> <INFO> <Aliases> <__init__> <WLSDPLY-19052> <Aliases loaded using WebLogic version 12.2.1.3.0 and WLST OFFLINE mode>
+####<Jul 23, 2024 11:35:22 AM> <INFO> <variables> <_substitute> <WLSDPLY-01737> <Environment variable "DOMAIN_UID" was not found>
+####<Jul 23, 2024 11:35:22 AM> <INFO> <variables> <_substitute> <WLSDPLY-01737> <Environment variable "DOMAIN_UID" was not found>
+####<Jul 23, 2024 11:35:22 AM> <INFO> <variables> <_substitute> <WLSDPLY-01737> <Environment variable "DOMAIN_UID" was not found>
+####<Jul 23, 2024 11:35:22 AM> <INFO> <variables> <_substitute> <WLSDPLY-01737> <Environment variable "DOMAIN_UID" was not found>
+####<Jul 23, 2024 11:35:22 AM> <INFO> <variables> <_substitute> <WLSDPLY-01739> <Could not resolve secret token "__weblogic-credentials__:username". Known secrets include: .  Secrets can only be resolved in Kubernetes environment. The secret tokens name and keys must have a matching Kubernetes secret name and literals in the same namespace. For WebLogic Kubernetes Operator deployment, you must specify the secret name in "domain.spec.configuration.secrets">
+####<Jul 23, 2024 11:35:22 AM> <INFO> <variables> <_substitute> <WLSDPLY-01739> <Could not resolve secret token "__weblogic-credentials__:password". Known secrets include: .  Secrets can only be resolved in Kubernetes environment. The secret tokens name and keys must have a matching Kubernetes secret name and literals in the same namespace. For WebLogic Kubernetes Operator deployment, you must specify the secret name in "domain.spec.configuration.secrets">
+####<Jul 23, 2024 11:35:22 AM> <INFO> <vz_config_helper> <_create_file> <WLSDPLY-01662> <Creating target configuration file /home/opc/prepareModelQdXVZJ/wko-domain.yaml>
+####<Jul 23, 2024 11:35:22 AM> <INFO> <crd_file_updater> <update_from_model> <WLSDPLY-01675> <Updating target output file "/home/opc/prepareModelQdXVZJ/wko-domain.yaml" from the kubernetes section of the model>
 
-Issue Log for prepareModel version 4.1.0 running WebLogic version 12.2.1.3.0 in offline mode:
+Issue Log for prepareModel version 4.2.0 running WebLogic version 12.2.1.3.0 in offline mode:
 
 Total:   SEVERE :    0  WARNING :    0
 
